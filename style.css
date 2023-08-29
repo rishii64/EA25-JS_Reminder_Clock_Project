@@ -7,6 +7,7 @@ body{
     background-color: #3D087B;
     display: flex;
     justify-content: center;
+    align-items: center;
 }
 .main{
     margin: 6px;
@@ -15,6 +16,7 @@ body{
     justify-content: center;
     flex-wrap: wrap;
     gap: 15px;
+    padding: 10px;
 }
 .left_container{
     width: 550px;
@@ -193,6 +195,9 @@ select{
 @media screen and (max-width:600px){
     .left_container{
         width: 100%;
+    }
+    .name{
+        font-size: 15px;
     }
     .head{
         gap: 15px;
