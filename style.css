@@ -188,6 +188,7 @@ select{
     font-family: arial;
     font-size: 13px;
     line-height: 18px;
+    text-align: center;
 }
 @media screen and (max-width:600px){
     .left_container{
