@@ -1,6 +1,8 @@
 const msg1 = document.getElementById('msg1');
 const msg2 = document.getElementById('msg2');
 const wake = document.getElementById('wake_up');
+// console.log(wake.children);
+console.log(wake.selectedIndex);
 const lunch = document.getElementById('lunch');
 const nap = document.getElementById('nap');
 const night = document.getElementById('night');

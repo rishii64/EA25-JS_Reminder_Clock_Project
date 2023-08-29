@@ -7,7 +7,6 @@ body{
     background-color: #3D087B;
     display: flex;
     justify-content: center;
-    overflow: hidden;
 }
 .main{
     margin: 6px;
