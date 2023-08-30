@@ -1,8 +1,6 @@
 const msg1 = document.getElementById('msg1');
 const msg2 = document.getElementById('msg2');
 const wake = document.getElementById('wake_up');
-// console.log(wake.children);
-console.log(wake.selectedIndex);
 const lunch = document.getElementById('lunch');
 const nap = document.getElementById('nap');
 const night = document.getElementById('night');
@@ -58,22 +56,24 @@ function clock(){
     let seconds = date.getSeconds();
     let ampm = 'AM';
 
+    if (hours >= 0 && hours <= 11) {
+        msg2.innerText = "GOOD MORNING!! WAKE UP !!"
+        console.log('mrng')
+    }
+    if (hours >= 12 && hours < 16) {
+        msg2.innerText = "GOOD AFTERNOON !! TAKE SOME SLEEP"
+        console.log('afternoon')
+    }
+    if (hours >= 16 && hours < 20 ) {
+        msg2.innerText = "GOOD EVENING !!"
+    }
+    if (hours >= 20 && hours < 23 ) {
+        msg2.innerText = "GOOD NIGHT !!"
+    }
+
     if(hours>=12){
         hours-=12;
         ampm="PM";
-    }
-
-    if (hours >= 0 && hours <= 11 && ampm === 'AM') {
-        msg2.innerText = "GOOD MORNING!! WAKE UP !!"
-    }
-    if (hours >= 12 && hours < 4 && ampm === 'PM') {
-        msg2.innerText = "GOOD AFTERNOON !! TAKE SOME SLEEP"
-    }
-    if (hours >= 4 && hours < 8 && ampm === 'PM') {
-        msg2.innerText = "GOOD EVENING !!"
-    }
-    if (hours >= 8 && hours < 12 && ampm === 'PM') {
-        msg2.innerText = "GOOD NIGHT !!"
     }
 
     if(hours===0)
